@@ -19,15 +19,9 @@ class Configuration implements ConfigurationInterface
             ->children()
 
             // Tyr api access
-            ->scalarNode('url')
-                ->defaultValue('http://tyr.dev.canaltp.fr/v0/')
-            ->end()
-            ->scalarNode('end_point_id')
-                ->defaultValue(2)
-            ->end()
-            ->scalarNode('app_name')
-                ->defaultValue('sncf')
-            ->end()
+            ->scalarNode('url')->isRequired()->end()
+            ->scalarNode('end_point_id')->isRequired()->end()
+            ->scalarNode('app_name')->isRequired()->end()
         ;
 
         return $treeBuilder;
