@@ -46,7 +46,7 @@ Add parameters in **parameters.yml**:
 ``` yml
 parameters:
     tyr_url: http://tyr.dev.canaltp.fr/v0/
-    # or aplha:
+    # or alpha:
     # tyr_url: http://tyr-ws.ctp.alpha.canaltp.fr/v0/
     tyr_end_point_id: 2
     tyr_type: without_free_instances
