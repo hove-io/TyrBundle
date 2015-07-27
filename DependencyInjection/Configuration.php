@@ -28,9 +28,6 @@ class Configuration implements ConfigurationInterface
             ->scalarNode('app_name')
                 ->defaultValue('sncf')
             ->end()
-            ->scalarNode('type')
-                ->defaultValue('without_free_instances')
-            ->end()
         ;
 
         return $treeBuilder;

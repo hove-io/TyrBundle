@@ -35,9 +35,8 @@ Updating **app/config.yml**:
 ``` yml
 # Tyr api configuration
 canal_tp_tyr:
-    url:            "%tyr_url%"
-    end_point_id:   "%tyr_end_point_id%"
-    type:           "%tyr_type%"
+    url:            %tyr_url%
+    end_point_id:   2
     app_name:       sncf
 ```
 
@@ -46,10 +45,6 @@ Add parameters in **parameters.yml**:
 ``` yml
 parameters:
     tyr_url: http://tyr.dev.canaltp.fr/v0/
-    # or alpha:
-    # tyr_url: http://tyr-ws.ctp.alpha.canaltp.fr/v0/
-    tyr_end_point_id: 2
-    tyr_type: without_free_instances
 ```
 
 
