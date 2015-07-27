@@ -1,0 +1,16 @@
+{
+    "name": "canaltp/TyrBundle",
+    "license": "GPL-3.0",
+    "type": "symfony-bundle",
+    "description": "Symfony2 bundle which provide a Tyr service.",
+    "homepage": "https://github.com/CanalTP/TyrBundle",
+    "keywords": ["php", "tyr", "symfony"],
+    "require": {
+        "php": ">=5.2",
+        "guzzlehttp/guzzle": ">=5.0",
+        "canaltp/TyrComponent": "1.x"
+    },
+    "autoload": {
+        "psr-4": { "CanalTP\\TyrBundle\\": "" }
+    }
+}
