@@ -1,5 +1,5 @@
 {
-    "name": "canaltp/TyrBundle",
+    "name": "canaltp/tyr-bundle",
     "license": "GPL-3.0",
     "type": "symfony-bundle",
     "description": "Symfony2 bundle which provide a Tyr service.",
@@ -8,7 +8,7 @@
     "require": {
         "php": ">=5.2",
         "guzzlehttp/guzzle": ">=5.0",
-        "canaltp/TyrComponent": "1.x"
+        "canaltp/tyr-component": "1.x"
     },
     "repositories": [
         {
