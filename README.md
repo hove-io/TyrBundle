@@ -61,4 +61,4 @@ $user = $tyrApi->getUserByEmail('...');
 
 ## License
 
-This project is under [GPL-3.0 Lisense](LICENSE).
+This project is under [GPL-3.0 License](LICENSE).
