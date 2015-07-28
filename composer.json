@@ -7,7 +7,6 @@
     "keywords": ["php", "tyr", "symfony"],
     "require": {
         "php": ">=5.2",
-        "guzzlehttp/guzzle": ">=5.0",
         "canaltp/tyr-component": "1.x"
     },
     "repositories": [
