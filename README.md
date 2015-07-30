@@ -13,7 +13,7 @@ Install via composer
 ``` js
 {
     "require": {
-        "canaltp/tyr-bundle": "1.x"
+        "canaltp/tyr-bundle": "1.1.x"
     }
 }
 ```
