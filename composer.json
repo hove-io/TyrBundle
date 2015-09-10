@@ -11,6 +11,10 @@
     },
     "repositories": [
         {
+            "type": "git",
+            "url": "git@github.com:CanalTP/TyrComponent.git"
+        },
+        {
             "type": "composer",
             "url": "http://packagist.canaltp.fr"
         }
