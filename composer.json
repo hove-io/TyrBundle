@@ -7,16 +7,12 @@
     "keywords": ["php", "tyr", "symfony"],
     "require": {
         "php": ">=5.2",
-        "canaltp/tyr-component": "1.1.x"
+        "canaltp/tyr-component": "~1.1"
     },
     "repositories": [
         {
             "type": "git",
             "url": "git@github.com:CanalTP/TyrComponent.git"
-        },
-        {
-            "type": "composer",
-            "url": "http://packagist.canaltp.fr"
         }
     ],
     "autoload": {
