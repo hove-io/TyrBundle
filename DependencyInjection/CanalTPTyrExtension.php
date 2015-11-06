@@ -27,7 +27,6 @@ class CanalTPTyrExtension extends Extension
             array(
                 '%canal_tp_tyr.tyr_url%',
                 '%canal_tp_tyr.tyr_end_point_id%',
-                '%canal_tp_tyr.tyr_app_name%',
             )
         ));
     }
