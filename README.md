@@ -1,7 +1,7 @@
 Tyr Bundle
 ==========
 
-Symfony2 bundle which provide a [TyrService](https://github.com/CanalTP/TyrComponent/blob/master/src/TyrService.php).
+Symfony2 bundle which provide a concrete [AbstractTyrService](https://github.com/CanalTP/TyrComponent/blob/master/src/AbstractTyrService.php).
 
 The bundle uses the [TyrComponent](https://github.com/CanalTP/TyrComponent).
 
