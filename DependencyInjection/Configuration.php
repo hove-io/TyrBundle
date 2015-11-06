@@ -21,7 +21,6 @@ class Configuration implements ConfigurationInterface
             // Tyr api access
             ->scalarNode('url')->isRequired()->end()
             ->scalarNode('end_point_id')->isRequired()->end()
-            ->scalarNode('app_name')->isRequired()->end()
         ;
 
         return $treeBuilder;
