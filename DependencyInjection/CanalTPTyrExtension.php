@@ -2,10 +2,10 @@
 
 namespace CanalTP\TyrBundle\DependencyInjection;
 
+use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
-use Symfony\Component\DependencyInjection\Loader;
+use CanalTP\TyrComponent\VersionChecker;
 
 class CanalTPTyrExtension extends Extension
 {
@@ -22,7 +22,13 @@ class CanalTPTyrExtension extends Extension
             $container->setParameter('canal_tp_tyr.tyr_'.$key, $value);
         }
 
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('services.yml');
+        $container->setDefinition('canal_tp_tyr.api', new Definition(
+            VersionChecker::getTyrServiceClassName(),
+            array(
+                '%canal_tp_tyr.tyr_url%',
+                '%canal_tp_tyr.tyr_end_point_id%',
+                '%canal_tp_tyr.tyr_app_name%',
+            )
+        ));
     }
 }

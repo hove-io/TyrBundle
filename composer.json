@@ -7,7 +7,9 @@
     "keywords": ["php", "tyr", "symfony"],
     "require": {
         "php": ">=5.2",
-        "canaltp/tyr-component": "1.1.x"
+        "symfony/dependency-injection": "~2.3",
+        "symfony/http-kernel": "~2.3",
+        "canaltp/tyr-component": "~1.2"
     },
     "repositories": [
         {
