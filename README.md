@@ -13,7 +13,7 @@ Install via composer
 ``` js
 {
     "require": {
-        "canalTP/tyr-bundle": "1.x"
+        "canaltp/tyr-bundle": "1.1.x"
     }
 }
 ```
@@ -37,7 +37,6 @@ Updating **app/config.yml**:
 canal_tp_tyr:
     url:            %tyr_url%
     end_point_id:   2
-    app_name:       sncf
 ```
 
 Add parameters in **parameters.yml**:
