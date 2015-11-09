@@ -20,7 +20,7 @@ class Configuration implements ConfigurationInterface
 
             // Tyr api access
             ->scalarNode('url')->isRequired()->end()
-            ->scalarNode('end_point_id')->end()
+            ->scalarNode('end_point_id')->defaultNull()->end()
         ;
 
         return $treeBuilder;
