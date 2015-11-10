@@ -36,7 +36,7 @@ Updating **app/config.yml**:
 # Tyr api configuration
 canal_tp_tyr:
     url:            %tyr_url%
-    end_point_id:   2
+    end_point_id:   2 # Optional, can also be set with setEndPointId
 ```
 
 Add parameters in **parameters.yml**:
@@ -52,6 +52,7 @@ parameters:
 ``` php
 // Accessing service
 $tyrApi = $container->get('canal_tp_tyr.api');
+$tyrApi->setEndPointId(1); // If not set in configuration
 
 // Call api
 $user = $tyrApi->getUserByEmail('...');
